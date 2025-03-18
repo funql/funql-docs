@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Millennium Falcon",
+    "setNumber": 75192,
+    "price": 849.99,
+    "launchTime": "2017-10-01T14:15:30.500Z",
+    "theme": "STAR_WARS"
+  },
+  {
+    "name": "The Razor Crest",
+    "setNumber": 75331,
+    "price": 599.99,
+    "launchTime": "2022-10-03T14:15:30.500Z",
+    "theme": "STAR_WARS"
+  }
+]
