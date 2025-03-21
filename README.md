@@ -1,4 +1,4 @@
-<img alt="FunQL logo" src="https://raw.githubusercontent.com/funql/funql-docs/main/assets/logo.png" width="300"/>
+![FunQL logo](https://raw.githubusercontent.com/funql/funql-docs/main/assets/logo.png)
 
 # FunQL
 
