@@ -1,4 +1,10 @@
-﻿# Field functions
+﻿---
+description: |
+  Explore FunQL field functions for sorting and filtering. Learn DateTime, Math, and String functions to extract dates,
+  round numbers, and modify text case.
+---
+
+# Field functions
 
 Field functions allow users to manipulate and extract data from fields when applying sorting and filtering operations.
 This section describes the available functions and their usage with the FunQL language.
