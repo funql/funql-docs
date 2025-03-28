@@ -110,6 +110,8 @@ nav:
   - Home: index.md
   - Learn:
     - learn/index.md
+    - Fields:
+        - Functions: learn/fields/functions.md
   - Play:
     - play/index.md
   - Code:
