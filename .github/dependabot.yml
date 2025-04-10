@@ -13,6 +13,5 @@ updates:
     directories:
       - "/"
       - "/src/*/"
-    versioning-strategy: increase
     schedule:
       interval: "daily"
