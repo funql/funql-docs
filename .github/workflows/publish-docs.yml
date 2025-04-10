@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Publish docs
+name: publish-docs
 
 on:
   # Allow running the workflow manually from the GitHub UI
@@ -19,9 +19,9 @@ permissions:
   contents: write
 
 jobs:
-  deploy_docs:
+  publish:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
