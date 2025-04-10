@@ -14,6 +14,7 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - "requirements.txt"
+      - "src/**"
 
 permissions:
   contents: write
