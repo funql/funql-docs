@@ -7,11 +7,11 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
   - package-ecosystem: "pip"
     directories:
       - "/"
       - "/src/*/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
