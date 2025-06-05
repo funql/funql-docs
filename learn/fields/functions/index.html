@@ -1471,10 +1471,9 @@ This section describes the available functions and their usage with the FunQL la
 </tbody>
 </table>
 <h3 id="year">year<a class="headerlink" href="#year" title="Permanent link">&para;</a></h3>
-<p>The <code>year</code> function has the following signature:</p>
+<p>The <code>year</code> function returns the year component of a <code>DateTime</code> parameter value.</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">year</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>year</code> function returns the year component of a <code>DateTime</code> parameter value.</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1510,11 +1509,10 @@ This section describes the available functions and their usage with the FunQL la
 </div>
 </div>
 <h3 id="month">month<a class="headerlink" href="#month" title="Permanent link">&para;</a></h3>
-<p>The <code>month</code> function has the following signature:</p>
+<p>The <code>month</code> function returns the month component of a <code>DateTime</code> parameter value as an integer from 1 (January) to 12
+(December).</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nf">month</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>month</code> function returns the month component of a <code>DateTime</code> parameter value. The month is given as an integer,
-ranging from 1 (January) to 12 (December).</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1550,11 +1548,9 @@ ranging from 1 (January) to 12 (December).</p>
 </div>
 </div>
 <h3 id="day">day<a class="headerlink" href="#day" title="Permanent link">&para;</a></h3>
-<p>The <code>day</code> function has the following signature:</p>
+<p>The <code>day</code> function returns the day component of a <code>DateTime</code> parameter value as an integer from 1 to 31.</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nf">day</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>day</code> function returns the day component of a <code>DateTime</code> parameter value. The day is given as an integer, ranging
-from 1 to 31.</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1590,11 +1586,10 @@ from 1 to 31.</p>
 </div>
 </div>
 <h3 id="hour">hour<a class="headerlink" href="#hour" title="Permanent link">&para;</a></h3>
-<p>The <code>hour</code> function has the following signature:</p>
+<p>The <code>hour</code> function returns the hour component of a <code>DateTime</code> parameter value as an integer from 0 (12:00 A.M.) to 23
+(11:00 P.M.).</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nf">hour</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>hour</code> function returns the hour component of a <code>DateTime</code> parameter value. The hour is given as an integer, ranging
-from 0 (12:00 A.M.) to 23 (11:00 P.M.).</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1630,11 +1625,9 @@ from 0 (12:00 A.M.) to 23 (11:00 P.M.).</p>
 </div>
 </div>
 <h3 id="minute">minute<a class="headerlink" href="#minute" title="Permanent link">&para;</a></h3>
-<p>The <code>minute</code> function has the following signature:</p>
+<p>The <code>minute</code> function returns the minute component of a <code>DateTime</code> parameter value as an integer from 0 to 59.</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nf">minute</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>minute</code> function returns the minute component of a <code>DateTime</code> parameter value. The minute is given as an integer,
-ranging from 0 to 59.</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">{</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1670,11 +1663,9 @@ ranging from 0 to 59.</p>
 </div>
 </div>
 <h3 id="second">second<a class="headerlink" href="#second" title="Permanent link">&para;</a></h3>
-<p>The <code>second</code> function has the following signature:</p>
+<p>The <code>second</code> function returns the second component of a <code>DateTime</code> parameter value as an integer from 0 to 59.</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nf">second</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>second</code> function returns the second component of a <code>DateTime</code> parameter value. The second is given as an integer,
-ranging from 0 to 59.</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">{</span>
 </span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1710,11 +1701,10 @@ ranging from 0 to 59.</p>
 </div>
 </div>
 <h3 id="millisecond">millisecond<a class="headerlink" href="#millisecond" title="Permanent link">&para;</a></h3>
-<p>The <code>millisecond</code> function has the following signature:</p>
+<p>The <code>millisecond</code> function returns the millisecond component of a <code>DateTime</code> parameter value as an integer from 0 to
+999.</p>
 <div class="language-funql highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nf">millisecond</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">DateTime</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
 </span></code></pre></div>
-<p>The <code>millisecond</code> function returns the millisecond component of a <code>DateTime</code> parameter value. The millisecond is given
-as an integer, ranging from 0 to 999.</p>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="p">{</span>
 </span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1776,12 +1766,11 @@ as an integer, ranging from 0 to 999.</p>
 </tbody>
 </table>
 <h3 id="round">round<a class="headerlink" href="#round" title="Permanent link">&para;</a></h3>
-<p>The <code>round</code> function has the following signature:</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nf">round</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
-</span></code></pre></div>
 <p>The <code>round</code> function rounds the input parameter numeric value to the nearest numeric value with no decimal component.</p>
 <p>FunQL uses away-from-zero rounding, meaning midpoint values (e.g., 0.5) are rounded to the next whole number away from
 zero. For example, 0.5 is rounded to 1 and ‑0.5 is rounded to -1.</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nf">round</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
+</span></code></pre></div>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="p">{</span>
 </span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1817,11 +1806,10 @@ zero. For example, 0.5 is rounded to 1 and ‑0.5 is rounded to -1.</p>
 </div>
 </div>
 <h3 id="floor">floor<a class="headerlink" href="#floor" title="Permanent link">&para;</a></h3>
-<p>The <code>floor</code> function has the following signature:</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nf">floor</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
-</span></code></pre></div>
 <p>The <code>floor</code> function rounds the input parameter numeric value down to the nearest numeric value with no decimal
 component.</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nf">floor</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
+</span></code></pre></div>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="p">{</span>
 </span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1857,11 +1845,10 @@ component.</p>
 </div>
 </div>
 <h3 id="ceiling">ceiling<a class="headerlink" href="#ceiling" title="Permanent link">&para;</a></h3>
-<p>The <code>ceiling</code> function has the following signature:</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="nf">ceiling</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
-</span></code></pre></div>
 <p>The <code>ceiling</code> function rounds the input parameter numeric value up to the nearest numeric value with no decimal
 component.</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="nf">ceiling</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="kt">Integer</span>
+</span></code></pre></div>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="p">{</span>
 </span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1919,11 +1906,10 @@ component.</p>
 </tbody>
 </table>
 <h3 id="lower">lower<a class="headerlink" href="#lower" title="Permanent link">&para;</a></h3>
-<p>The <code>lower</code> function has the following signature:</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="nf">lower</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">):</span><span class="w"> </span><span class="kt">String</span>
-</span></code></pre></div>
 <p>The <code>lower</code> function returns the input parameter string value with all uppercase characters converted to lowercase
 according to Unicode rules.</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="nf">lower</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">):</span><span class="w"> </span><span class="kt">String</span>
+</span></code></pre></div>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="p">{</span>
 </span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="hll"><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -1960,11 +1946,10 @@ converted to lowercase:</p>
 </div>
 </div>
 <h3 id="upper">upper<a class="headerlink" href="#upper" title="Permanent link">&para;</a></h3>
-<p>The <code>upper</code> function has the following signature:</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="nf">upper</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">):</span><span class="w"> </span><span class="kt">String</span>
-</span></code></pre></div>
 <p>The <code>upper</code> function returns the input parameter string value with all lowercase characters converted to uppercase
 according to Unicode rules.</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="nf">upper</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">):</span><span class="w"> </span><span class="kt">String</span>
+</span></code></pre></div>
 <p>For example:</p>
 <div class="language-json highlight"><span class="filename">set.json</span><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="p">{</span>
 </span><span id="__span-56-2"><a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a><span class="hll"><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
@@ -2022,7 +2007,7 @@ converted to uppercase:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2025 12:00:34 UTC">June 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2025 12:55:02 UTC">June 5, 2025</span>
   </span>
 
     
