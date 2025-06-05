@@ -27,13 +27,11 @@ These functions extract specific components from `DateTime` values, such as the 
 
 ### year
 
-The `year` function has the following signature:
+The `year` function returns the year component of a `DateTime` parameter value.
 
 ```funql
 year(field: DateTime): Integer
 ```
-
-The `year` function returns the year component of a `DateTime` parameter value.
 
 For example:
 
@@ -76,14 +74,12 @@ Return all sets that were launched in 2017:
 
 ### month
 
-The `month` function has the following signature:
+The `month` function returns the month component of a `DateTime` parameter value as an integer from 1 (January) to 12
+(December).
 
 ```funql
 month(field: DateTime): Integer
 ```
-
-The `month` function returns the month component of a `DateTime` parameter value. The month is given as an integer,
-ranging from 1 (January) to 12 (December).
 
 For example:
 
@@ -126,14 +122,11 @@ Return all sets that were launched in October, the 10th month of the year:
 
 ### day
 
-The `day` function has the following signature:
+The `day` function returns the day component of a `DateTime` parameter value as an integer from 1 to 31.
 
 ```funql
 day(field: DateTime): Integer
 ```
-
-The `day` function returns the day component of a `DateTime` parameter value. The day is given as an integer, ranging
-from 1 to 31.
 
 For example:
 
@@ -176,14 +169,12 @@ Return all sets that were launched on the 1st day of a month:
 
 ### hour
 
-The `hour` function has the following signature:
+The `hour` function returns the hour component of a `DateTime` parameter value as an integer from 0 (12:00 A.M.) to 23
+(11:00 P.M.).
 
 ```funql
 hour(field: DateTime): Integer
 ```
-
-The `hour` function returns the hour component of a `DateTime` parameter value. The hour is given as an integer, ranging
-from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 
 For example:
 
@@ -226,14 +217,11 @@ Return all sets that were launched in the 14th hour of a day:
 
 ### minute
 
-The `minute` function has the following signature:
+The `minute` function returns the minute component of a `DateTime` parameter value as an integer from 0 to 59.
 
 ```funql
 minute(field: DateTime): Integer
 ```
-
-The `minute` function returns the minute component of a `DateTime` parameter value. The minute is given as an integer,
-ranging from 0 to 59.
 
 For example:
 
@@ -276,14 +264,11 @@ Return all sets that were launched in the 15th minute of any hour on any day:
 
 ### second
 
-The `second` function has the following signature:
+The `second` function returns the second component of a `DateTime` parameter value as an integer from 0 to 59.
 
 ```funql
 second(field: DateTime): Integer
 ```
-
-The `second` function returns the second component of a `DateTime` parameter value. The second is given as an integer,
-ranging from 0 to 59.
 
 For example:
 
@@ -326,14 +311,12 @@ Return all sets that were launched in the 30th second of any minute of any hour 
 
 ### millisecond
 
-The `millisecond` function has the following signature:
+The `millisecond` function returns the millisecond component of a `DateTime` parameter value as an integer from 0 to
+999.
 
 ```funql
 millisecond(field: DateTime): Integer
 ```
-
-The `millisecond` function returns the millisecond component of a `DateTime` parameter value. The millisecond is given
-as an integer, ranging from 0 to 999.
 
 For example:
 
@@ -390,16 +373,14 @@ These functions round numerical values in different ways.
 
 ### round
 
-The `round` function has the following signature:
-
-```funql
-round(field: Float): Integer
-```
-
 The `round` function rounds the input parameter numeric value to the nearest numeric value with no decimal component.
 
 FunQL uses away-from-zero rounding, meaning midpoint values (e.g., 0.5) are rounded to the next whole number away from
 zero. For example, 0.5 is rounded to 1 and ‑0.5 is rounded to -1.
+
+```funql
+round(field: Float): Integer
+```
 
 For example:
 
@@ -442,14 +423,12 @@ Return all sets that have a price that rounds to 850:
 
 ### floor
 
-The `floor` function has the following signature:
+The `floor` function rounds the input parameter numeric value down to the nearest numeric value with no decimal
+component.
 
 ```funql
 floor(field: Float): Integer
 ```
-
-The `floor` function rounds the input parameter numeric value down to the nearest numeric value with no decimal
-component.
 
 For example:
 
@@ -492,14 +471,12 @@ Return all sets that have a price that rounds down to 849:
 
 ### ceiling
 
-The `ceiling` function has the following signature:
+The `ceiling` function rounds the input parameter numeric value up to the nearest numeric value with no decimal
+component.
 
 ```funql
 ceiling(field: Float): Integer
 ```
-
-The `ceiling` function rounds the input parameter numeric value up to the nearest numeric value with no decimal
-component.
 
 For example:
 
@@ -555,14 +532,12 @@ These functions modify string values by changing their case.
 
 ### lower
 
-The `lower` function has the following signature:
+The `lower` function returns the input parameter string value with all uppercase characters converted to lowercase
+according to Unicode rules.
 
 ```funql
 lower(field: String): String
 ```
-
-The `lower` function returns the input parameter string value with all uppercase characters converted to lowercase
-according to Unicode rules.
 
 For example:
 
@@ -606,14 +581,12 @@ converted to lowercase:
 
 ### upper
 
-The `upper` function has the following signature:
+The `upper` function returns the input parameter string value with all lowercase characters converted to uppercase
+according to Unicode rules.
 
 ```funql
 upper(field: String): String
 ```
-
-The `upper` function returns the input parameter string value with all lowercase characters converted to uppercase
-according to Unicode rules.
 
 For example:
 
