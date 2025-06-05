@@ -112,6 +112,8 @@ nav:
     - learn/index.md
     - Fields:
         - Functions: learn/fields/functions.md
+    - Parameters:
+        - Limit: learn/parameters/limit.md
   - Play:
     - play/index.md
   - Code:
