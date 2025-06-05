@@ -10,6 +10,7 @@ Designed for usability, flexibility and seamless integration, FunQL simplifies c
 existing REST API or build a new API with powerful, well-structured query capabilities using the FunQL Query Language.
 
 [Get started](./learn/index.md){ .md-button .md-button--primary }
+[:material-flask-outline: Explore Playground](./play/index.md){ .md-button }
 
 ## Everything is a function
 
@@ -37,6 +38,8 @@ from simple search to complex queries. Looking for LEGO **Star Wars** sets that 
     
     --8<-- "snippets/sets.json"
     ```
+
+    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=and(eq(theme,%22STAR_WARS%22),gte(price,500),gt(year(launchTime),2010))&sort=desc(price) "Try this example in our Playground")
 
     </div>
 
