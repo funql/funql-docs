@@ -19,4 +19,12 @@ greater flexibility.
 
     [:material-github: funql/funql-dotnet](https://github.com/funql/funql-dotnet)
 
+-   :material-language-csharp:{ .lg .middle } **FunQL Playground API**
+
+    ---
+
+    The FunQL Playground API allows developers to experiment with FunQL.
+
+    [:material-github: funql/funql-playground-api](https://github.com/funql/funql-playground-api)
+
 </div>
