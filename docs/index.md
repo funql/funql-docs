@@ -20,7 +20,7 @@ from simple search to complex queries. Looking for LEGO **Star Wars** sets that 
 === "REST"
 
     ```funql
-    GET https://api.play.funql.io/sets?filter=
+    GET https://api.play.funql.io/v1beta1/sets?filter=
       and(
         eq(theme, "STAR_WARS"),
         gte(price, 500),

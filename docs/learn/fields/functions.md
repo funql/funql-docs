@@ -58,7 +58,7 @@ Return all sets that were launched in 2017:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(year(launchTime), 2017)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(year(launchTime), 2017)
     ```
 
 === "QL"
@@ -108,7 +108,7 @@ Return all sets that were launched in October, the 10th month of the year:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(month(launchTime), 10)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(month(launchTime), 10)
     ```
 
 === "QL"
@@ -158,7 +158,7 @@ Return all sets that were launched on the 1st day of a month:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(day(launchTime), 1)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(day(launchTime), 1)
     ```
 
 === "QL"
@@ -208,7 +208,7 @@ Return all sets that were launched in the 14th hour of a day:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(hour(launchTime), 14)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(hour(launchTime), 14)
     ```
 
 === "QL"
@@ -258,7 +258,7 @@ Return all sets that were launched in the 15th minute of any hour on any day:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(minute(launchTime), 15)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(minute(launchTime), 15)
     ```
 
 === "QL"
@@ -308,7 +308,7 @@ Return all sets that were launched in the 30th second of any minute of any hour 
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(second(launchTime), 30)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(second(launchTime), 30)
     ```
 
 === "QL"
@@ -358,7 +358,7 @@ Return all sets that were launched in the 500th millisecond of any second of any
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(millisecond(launchTime), 500)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(millisecond(launchTime), 500)
     ```
 
 === "QL"
@@ -424,7 +424,7 @@ Return all sets that have a price that rounds to 850:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(round(price), 850)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(round(price), 850)
     ```
 
 === "QL"
@@ -474,7 +474,7 @@ Return all sets that have a price that rounds down to 849:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(floor(price), 849)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(floor(price), 849)
     ```
 
 === "QL"
@@ -524,7 +524,7 @@ Return all sets that have a price that rounds up to 850:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(ceiling(price), 850)
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(ceiling(price), 850)
     ```
 
 === "QL"
@@ -588,7 +588,7 @@ converted to lowercase:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(lower(name), "lego star wars millennium falcon")
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(lower(name), "lego star wars millennium falcon")
     ```
 
 === "QL"
@@ -639,7 +639,7 @@ converted to uppercase:
 === "REST"
 
     ```urlencoded
-    GET https://api.play.funql.io/sets?filter=eq(upper(name), "LEGO STAR WARS MILLENNIUM FALCON")
+    GET https://api.play.funql.io/v1beta1/sets?filter=eq(upper(name), "LEGO STAR WARS MILLENNIUM FALCON")
     ```
 
 === "QL"
