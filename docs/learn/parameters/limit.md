@@ -36,6 +36,8 @@ consistent results, combine `limit` with a `sort` clause.
     --8<-- "learn/snippets/set-millennium-falcon.json"
     ```
 
+    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?limit=1 "Try this example in our Playground")
+
     </div>
 
 === "QL"
