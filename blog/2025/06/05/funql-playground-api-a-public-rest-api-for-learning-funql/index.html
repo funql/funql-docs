@@ -6,21 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Get started with FunQL .NET in C#. Use the Basic sample to run functional queries with filter and sort on in-memory
-data collections.
+        <meta name="description" content="Explore the hosted FunQL Playground API: a public REST API with sample data and OpenAPI docs to learn FunQL filtering,
+sorting, and pagination.
 ">
       
       
         <meta name="author" content="Xtracked">
       
       
-        <link rel="canonical" href="https://funql.io/blog/2025/04/16/hands-on-with-funql-dotnet-basic-sample/">
+        <link rel="canonical" href="https://funql.io/blog/2025/06/05/funql-playground-api-a-public-rest-api-for-learning-funql/">
       
       
-        <link rel="prev" href="../../02/introducing-the-first-funql-dotnet-sample/">
+        <link rel="prev" href="../../../04/16/hands-on-with-funql-dotnet-basic-sample/">
       
-      
-        <link rel="next" href="../../../06/05/funql-playground-api-a-public-rest-api-for-learning-funql/">
       
       
       <link rel="icon" href="../../../../../assets/favicon.png">
@@ -28,7 +26,7 @@ data collections.
     
     
       
-        <title>Hands-on with FunQL .NET Basic sample - FunQL</title>
+        <title>FunQL Playground API: A public REST API for learning FunQL - FunQL</title>
       
     
     
@@ -92,7 +90,7 @@ data collections.
     <div data-md-component="skip">
       
         
-        <a href="#hands-on-with-funql-net-basic-sample" class="md-skip">
+        <a href="#funql-playground-api-a-public-rest-api-for-learning-funql" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +123,7 @@ data collections.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hands-on with FunQL .NET Basic sample
+              FunQL Playground API: A public REST API for learning FunQL
             
           </span>
         </div>
@@ -998,64 +996,73 @@ data collections.
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-we-begin" class="md-nav__link">
+  <a href="#what-is-the-funql-playground-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Before we begin
+      What is the FunQL Playground API?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploring-the-basics" class="md-nav__link">
+  <a href="#what-can-you-do-with-it" class="md-nav__link">
     <span class="md-ellipsis">
-      Exploring the basics
+      What can you do with it?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Exploring the basics">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-with-postman-or-your-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore with Postman or your browser
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-in-the-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's in the GitHub repository?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What&#39;s in the GitHub repository?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-install-the-funql-package" class="md-nav__link">
+  <a href="#openapi-specification-oas" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Install the FunQL package
+      OpenAPI Specification (OAS)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-define-your-data-model-and-funql-schema" class="md-nav__link">
+  <a href="#database-design" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Define your data model and FunQL schema
+      Database design
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-prepare-your-data-and-query-parameters" class="md-nav__link">
+  <a href="#c-application" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Prepare your data and query parameters
+      C# Application
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-execute-the-query-using-funql-net" class="md-nav__link">
+  <a href="#postman" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Execute the query using FunQL .NET
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-view-the-result" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. View the result
+      Postman
     </span>
   </a>
   
@@ -1067,9 +1074,9 @@ data collections.
 </li>
       
         <li class="md-nav__item">
-  <a href="#try-it-now" class="md-nav__link">
+  <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      Try it now!
+      What's next?
     </span>
   </a>
   
@@ -1146,7 +1153,7 @@ data collections.
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-04-16 00:00:00+00:00" class="md-ellipsis">April 16, 2025</time>
+                        <time datetime="2025-06-05 00:00:00+00:00" class="md-ellipsis">June 5, 2025</time>
                       </div>
                     </li>
                     
@@ -1168,7 +1175,7 @@ data collections.
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              4 min read
+                              3 min read
                             
                           </span>
                         </div>
@@ -1178,65 +1185,6 @@ data collections.
                 </nav>
               </li>
             </ul>
-            
-              <ul class="md-post__meta md-nav__list">
-                <li class="md-nav__item md-nav__item--section">
-                  <div class="md-post__title">
-                    <span class="md-ellipsis">
-                      Related links
-                    </span>
-                  </div>
-                  <nav class="md-nav">
-                    <ul class="md-nav__list">
-                      
-                        
-                        
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../03/21/funql-dotnet-just-landed/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FunQL .NET just landed
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-                      
-                        
-                        
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../02/introducing-the-first-funql-dotnet-sample/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introducing the first FunQL .NET sample
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-                      
-                    </ul>
-                  </nav>
-                </li>
-              </ul>
             
           </nav>
           
@@ -1251,7 +1199,7 @@ data collections.
 
 
   
-    <a href="https://github.com/funql/funql-docs/blob/main/docs/blog/posts/hands-on-with-funql-dotnet-basic-sample.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/funql/funql-docs/blob/main/docs/blog/posts/funql-playground-api-a-public-rest-api-for-learning-funql.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1260,139 +1208,130 @@ data collections.
     
       
     
-    <a href="https://github.com/funql/funql-docs/raw/main/docs/blog/posts/hands-on-with-funql-dotnet-basic-sample.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/funql/funql-docs/raw/main/docs/blog/posts/funql-playground-api-a-public-rest-api-for-learning-funql.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="hands-on-with-funql-net-basic-sample">Hands-on with FunQL .NET Basic sample<a class="headerlink" href="#hands-on-with-funql-net-basic-sample" title="Permanent link">&para;</a></h1>
-<p><strong>FunQL .NET lets you easily add filtering, sorting, and pagination to your API — using a simple, functional query
-language that works out of the box. If you want to explore FunQL .NET without doing a deep dive, the new Basic sample is
-the place to start.</strong></p>
-<p>The Basic sample defines a simple FunQL schema and runs a query on an in-memory list of LEGO sets using <code>filter</code> and
-<code>sort</code> parameters. The results are printed to the console as formatted JSON. No HTTP. No EF Core. Just the basics.</p>
+<h1 id="funql-playground-api-a-public-rest-api-for-learning-funql">FunQL Playground API: A public REST API for learning FunQL<a class="headerlink" href="#funql-playground-api-a-public-rest-api-for-learning-funql" title="Permanent link">&para;</a></h1>
+<p><strong>The FunQL Playground API is now live — a hosted, no-setup environment for exploring FunQL, the Functional Query
+Language that simplifies and enhances how you query APIs.</strong></p>
+<p>Whether you want to try filtering, sorting, pagination, or just understand how FunQL behaves in practice, the Playground
+API offers a clean RESTful interface backed by real-world data and a complete OpenAPI Specification (OAS). The
+Playground API is fully <a href="https://github.com/funql/funql-playground-api">open source on GitHub</a>.</p>
 <!-- more -->
 
-<h2 id="before-we-begin">Before we begin<a class="headerlink" href="#before-we-begin" title="Permanent link">&para;</a></h2>
-<p>The steps below walk you through the core concepts demonstrated in the <a href="https://github.com/funql/funql-dotnet/tree/main/samples/Basic">Basic sample</a>. We show you how to
-define a FunQL schema, set up a queryable collection, and execute a request using <code>filter</code> and <code>sort</code> parameters — just
-like in the sample. This gives you a minimal, self-contained starting point for working with FunQL .NET.</p>
-<p>This guide is for C# developers who want to explore FunQL .NET without setting up a full API backend. The Basic sample
-is part of the <a href="https://github.com/funql/funql-dotnet/releases/tag/1.1.0">FunQL .NET 1.1.0 release</a>.</p>
-<h2 id="exploring-the-basics">Exploring the basics<a class="headerlink" href="#exploring-the-basics" title="Permanent link">&para;</a></h2>
-<p>To use <a href="https://github.com/funql/funql-dotnet">FunQL .NET</a>, you only need two things: a queryable collection of data and a FunQL schema. The
-schema serves as the main entry point for handling FunQL requests. It defines the configuration for fields, available
-functions like filtering and sorting, and features such as LINQ support.</p>
-<h3 id="1-install-the-funql-package">1. Install the FunQL package<a class="headerlink" href="#1-install-the-funql-package" title="Permanent link">&para;</a></h3>
-<p>FunQL .NET is available on <a href="https://www.nuget.org/profiles/funql">NuGet</a>. To get started, first add the <a href="https://www.nuget.org/packages/FunQL">FunQL</a> package to your project by running the following command:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>dotnet<span class="w"> </span>add<span class="w"> </span>package<span class="w"> </span>FunQL
-</span></code></pre></div>
-<h3 id="2-define-your-data-model-and-funql-schema">2. Define your data model and FunQL schema<a class="headerlink" href="#2-define-your-data-model-and-funql-schema" title="Permanent link">&para;</a></h3>
-<p>Next, define your data model and configure a FunQL schema that describes the structure of your data and which fields can
-be filtered and sorted:</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Data model representing the objects you want to query</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="nf">Set</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Name</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">Price</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="w"> </span><span class="n">LaunchTime</span><span class="p">);</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// FunQL schema configuration for the &#39;listSets()&#39; request</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ApiSchema</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Schema</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnInitializeSchema</span><span class="p">(</span><span class="n">ISchemaConfigBuilder</span><span class="w"> </span><span class="n">schema</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="c1">// Add core parsing, validation, and execution features</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="n">schema</span><span class="p">.</span><span class="n">AddCoreFeatures</span><span class="p">();</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="c1">// Add LINQ feature for translating FunQL queries into LINQ expressions</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">schema</span><span class="p">.</span><span class="n">AddLinqFeature</span><span class="p">();</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="c1">// Define the listSets() request, enable filter and sort, and configure its available fields</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="n">schema</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="s">&quot;listSets&quot;</span><span class="p">)</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">            </span><span class="p">.</span><span class="n">SupportsFilter</span><span class="p">()</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">            </span><span class="p">.</span><span class="n">SupportsSort</span><span class="p">()</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">            </span><span class="p">.</span><span class="n">ReturnsListOfObjects</span><span class="o">&lt;</span><span class="n">Set</span><span class="o">&gt;</span><span class="p">(</span><span class="k">set</span><span class="w"> </span><span class="o">=&gt;</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">            </span><span class="p">{</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">                </span><span class="c1">// Configure the Name field to support String filter and sort functions (like eq, gt, has, lower)</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">                </span><span class="k">set</span><span class="p">.</span><span class="n">SimpleField</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">                    </span><span class="p">.</span><span class="n">HasName</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">)</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsFilter</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsStringFilterFunctions</span><span class="p">())</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsSort</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsStringFieldFunctions</span><span class="p">());</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">                </span><span class="c1">// Configure the Price field to support Double filter and sort functions (like eq, gt, floor)</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                </span><span class="k">set</span><span class="p">.</span><span class="n">SimpleField</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Price</span><span class="p">)</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                    </span><span class="p">.</span><span class="n">HasName</span><span class="p">(</span><span class="s">&quot;price&quot;</span><span class="p">)</span>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsFilter</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsDoubleFilterFunctions</span><span class="p">())</span>
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsSort</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsDoubleFieldFunctions</span><span class="p">());</span>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>
-</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">                </span><span class="c1">// Configure the LaunchTime field to support DateTime filter and sort functions (like eq, gt, year)</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">                </span><span class="k">set</span><span class="p">.</span><span class="n">SimpleField</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">LaunchTime</span><span class="p">)</span>
-</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">                    </span><span class="p">.</span><span class="n">HasName</span><span class="p">(</span><span class="s">&quot;launchTime&quot;</span><span class="p">)</span>
-</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsFilter</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsDateTimeFilterFunctions</span><span class="p">())</span>
-</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">                    </span><span class="p">.</span><span class="n">SupportsSort</span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">SupportsDateTimeFieldFunctions</span><span class="p">());</span>
-</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">            </span><span class="p">});</span>
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="3-prepare-your-data-and-query-parameters">3. Prepare your data and query parameters<a class="headerlink" href="#3-prepare-your-data-and-query-parameters" title="Permanent link">&para;</a></h3>
-<p>Then, prepare a collection of data that you want to query and define the parameters of the request.</p>
-<p>In this example, we define an in-memory list of LEGO sets. In real-world scenarios this would be, for example, an Entity
-Framework Core <code>DbSet&lt;Set&gt;</code>. In that case, FunQL .NET can directly query the database.</p>
-<p>Our list is converted to an <code>IQueryable&lt;Set&gt;</code>, so FunQL .NET can apply LINQ expressions (like <code>Where()</code> and <code>OrderBy()</code>)
-based on the <code>filter</code> and <code>sort</code> parameters:</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Prepare the data source</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">IQueryable</span><span class="o">&lt;</span><span class="n">Set</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Set</span><span class="o">&gt;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">new</span><span class="p">(</span><span class="s">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">849.99</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;2017-10-01&quot;</span><span class="p">)),</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="k">new</span><span class="p">(</span><span class="s">&quot;LEGO Star Wars The Razor Crest&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">599.99</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;2022-10-03&quot;</span><span class="p">)),</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">new</span><span class="p">(</span><span class="s">&quot;LEGO DC Batman Batmobile Tumbler&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">269.99</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;2021-11-01&quot;</span><span class="p">)),</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">new</span><span class="p">(</span><span class="s">&quot;LEGO Harry Potter Hogwarts Castle&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">469.99</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;2018-09-01&quot;</span><span class="p">)),</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}.</span><span class="n">AsQueryable</span><span class="p">();</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">// Define the FunQL filter and sort parameters</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">// This filter selects Star Wars sets with a price &gt;= 500 and launch year after 2010</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;and(has(upper(name), \&quot;STAR WARS\&quot;), gte(price, 500), gt(year(launchTime), 2010))&quot;</span><span class="p">;</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1">// Sort results by price in descending order</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">sort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;desc(price)&quot;</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="4-execute-the-query-using-funql-net">4. Execute the query using FunQL .NET<a class="headerlink" href="#4-execute-the-query-using-funql-net" title="Permanent link">&para;</a></h3>
-<p>Finally, create the FunQL schema and execute a filter and sort request using FunQL .NET:</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Create the FunQL schema that defines the available requests and fields</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">schema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ApiSchema</span><span class="p">();</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">// Execute the FunQL request using the schema and parameters</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">sets</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="p">.</span><span class="n">ExecuteRequestForParameters</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span><span class="w"> </span><span class="n">requestName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;listSets&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">filter</span><span class="p">:</span><span class="w"> </span><span class="n">filter</span><span class="p">,</span><span class="w"> </span><span class="n">sort</span><span class="p">:</span><span class="w"> </span><span class="n">sort</span><span class="p">);</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1">// Print the filtered and sorted result as JSON</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">var</span><span class="w"> </span><span class="n">jsonSerializerOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonSerializerOptions</span><span class="p">(</span><span class="n">JsonSerializerDefaults</span><span class="p">.</span><span class="n">Web</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">WriteIndented</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">JsonSerializer</span><span class="p">.</span><span class="n">Serialize</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">Data</span><span class="p">,</span><span class="w"> </span><span class="n">jsonSerializerOptions</span><span class="p">));</span>
-</span></code></pre></div>
-<h3 id="5-view-the-result">5. View the result<a class="headerlink" href="#5-view-the-result" title="Permanent link">&para;</a></h3>
-<p>The result includes all LEGO sets where:</p>
+<h2 id="what-is-the-funql-playground-api">What is the FunQL Playground API?<a class="headerlink" href="#what-is-the-funql-playground-api" title="Permanent link">&para;</a></h2>
+<p>The Playground API is the core of the FunQL Playground — an interactive, hosted environment where developers can learn
+FunQL by example. It lets you try FunQL queries directly, without installing anything locally or writing a single line
+of code.</p>
+<p>Using standard REST endpoints, the API shows how FunQL's expressive query parameters work in practice — including
+advanced filtering, sorting on multiple fields, and robust pagination.</p>
+<p>It is ideal for experimenting with FunQL in a live, realistic setting.</p>
+<h2 id="what-can-you-do-with-it">What can you do with it?<a class="headerlink" href="#what-can-you-do-with-it" title="Permanent link">&para;</a></h2>
+<p>The Playground API currently exposes endpoints for three data sets:</p>
 <ul>
-<li>The uppercased <code>name</code> contains <code>"STAR WARS"</code></li>
-<li>The <code>price</code> is greater than or equal to <code>500</code></li>
-<li>The <code>launchTime</code>'s year is greater than <code>2010</code></li>
+<li><strong>Sets</strong> — A list of LEGO sets with metadata</li>
+<li><strong>Minifigures</strong> — Individual figures associated with sets</li>
+<li><strong>Designers</strong> — People who designed the sets</li>
 </ul>
-<p>The items are sorted by price in descending order:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">[</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">849.99</span><span class="p">,</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">&quot;launchTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2017-10-01T00:00:00&quot;</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">{</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars The Razor Crest&quot;</span><span class="p">,</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">599.99</span><span class="p">,</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="nt">&quot;launchTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-10-03T00:00:00&quot;</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">]</span>
+<p>Each of these endpoints supports FunQL-style query parameters. The OpenAPI Specification (OAS) defines which fields
+support filtering or sorting and includes example values.</p>
+<p>Here is an example of a FunQL query in action:</p>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">GET</span><span class="w"> </span><span class="err">https://api.play.funql.io/v1beta1/sets?filter=</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nf">and</span><span class="p">(</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nf">eq</span><span class="p">(</span><span class="nv">theme</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;STAR_WARS&quot;</span><span class="p">),</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nf">gte</span><span class="p">(</span><span class="nv">price</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">),</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nf">gt</span><span class="p">(</span><span class="nf">year</span><span class="p">(</span><span class="nv">launchTime</span><span class="p">),</span><span class="w"> </span><span class="mi">2010</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="err">&amp;sort=</span><span class="nf">desc</span><span class="p">(</span><span class="nv">price</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="try-it-now">Try it now!<a class="headerlink" href="#try-it-now" title="Permanent link">&para;</a></h2>
-<p>Ready to get your hands dirty? Clone the <a href="https://github.com/funql/funql-dotnet/tree/main/samples/Basic">Basic sample</a> and see how <a href="https://github.com/funql/funql-dotnet">FunQL .NET</a> works in
-just a few lines of C# code. You can also check out the <a href="https://github.com/funql/funql-dotnet/tree/main/samples/WebApi">WebApi sample</a> to see how FunQL .NET works in a REST API setup.</p>
-<p><a class="md-button md-button--primary" href="https://github.com/funql/funql-dotnet/tree/main/samples/Basic">Explore on GitHub</a></p>
+<div class="result">
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="err">Co</span><span class="kc">ntent</span><span class="mi">-</span><span class="err">Type</span><span class="p">:</span><span class="w"> </span><span class="err">applica</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">/jso</span><span class="kc">n</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">[</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;041a9eed-1665-40e5-876e-1875460cf730&quot;</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LEGO Star Wars Millennium Falcon&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;setNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">75192</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;itemNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="nt">&quot;EUROPE&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6175770</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="nt">&quot;NORTH_AMERICA&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6175771</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&quot;pieces&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7541</span><span class="p">,</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">849.99</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">&quot;designerId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ee6f6c30-f413-414f-a58c-ae3abf7776a3&quot;</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nt">&quot;designer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ee6f6c30-f413-414f-a58c-ae3abf7776a3&quot;</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hans Burkhard Schlömer&quot;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nt">&quot;launchTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2017-10-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nt">&quot;packagingType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BOX&quot;</span><span class="p">,</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STAR_WARS&quot;</span><span class="p">,</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">    </span><span class="nt">&quot;categories&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">      </span><span class="s2">&quot;VEHICLES&quot;</span><span class="p">,</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">      </span><span class="s2">&quot;ULTIMATE_COLLECTOR_SERIES&quot;</span><span class="p">,</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">      </span><span class="s2">&quot;MOVIES&quot;</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">    </span><span class="nt">&quot;minifigures&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;146c0e19-7b76-4d23-8676-a5c38a0565d2&quot;</span><span class="p">,</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SW0878: Princess Leia (Hoth Outfit White)&quot;</span><span class="p">,</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">        </span><span class="nt">&quot;quantity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">      </span><span class="p">},</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">      </span><span class="err">...</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="p">]</span>
+</span></code></pre></div>
+</div>
+<h2 id="explore-with-postman-or-your-browser">Explore with Postman or your browser<a class="headerlink" href="#explore-with-postman-or-your-browser" title="Permanent link">&para;</a></h2>
+<p>You do not need to write any code to start experimenting.</p>
+<ul>
+<li>Use our <a href="https://oas.play.funql.io/">hosted OpenAPI docs</a> to explore all available endpoints</li>
+<li>Use our public <a href="https://www.postman.com/funqlio/funql/collection/hb88ymo/funql-playground-api">Postman Collection</a> to send requests from Postman</li>
+<li>Or simply open your browser and call <a href="https://api.play.funql.io/v1beta1/sets">api.play.funql.io/v1beta1/sets</a> to get
+  started</li>
+</ul>
+<h2 id="whats-in-the-github-repository">What's in the GitHub repository?<a class="headerlink" href="#whats-in-the-github-repository" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://github.com/funql/funql-playground-api"><code>funql-playground-api</code></a> repository contains everything needed to run, understand, and extend the
+Playground API:</p>
+<h3 id="openapi-specification-oas">OpenAPI Specification (OAS)<a class="headerlink" href="#openapi-specification-oas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A structured, modular OpenAPI spec organized by paths, schemas, and parameters</li>
+<li>Documentation of supported filters, sorting options, and pagination behavior</li>
+</ul>
+<h3 id="database-design">Database design<a class="headerlink" href="#database-design" title="Permanent link">&para;</a></h3>
+<ul>
+<li>PostgreSQL schema defined in SQL files</li>
+<li>Seed data for sets, minifigures, and designers in CSV format</li>
+<li>Migration scripts for initializing the database</li>
+</ul>
+<h3 id="c-application">C# Application<a class="headerlink" href="#c-application" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Domain</code> layer — Entity models based on the database</li>
+<li><code>Infrastructure</code> layer — Maps entities to PostgreSQL using Entity Framework Core</li>
+<li><code>Application</code> layer — Defines query models, request handlers, and response types</li>
+<li><code>WebApi</code> layer — Defines API endpoints and handles HTTP requests</li>
+</ul>
+<h3 id="postman">Postman<a class="headerlink" href="#postman" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A Postman Collection for exploring the API without writing any code</li>
+</ul>
+<h2 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>This is the first in a series of blog posts about the FunQL Playground. Upcoming posts will explore:</p>
+<ul>
+<li>How the OpenAPI Specification (OAS) is structured — and the conventions we follow</li>
+<li>Using GitHub Actions and Redocly CLI to publish OpenAPI docs automatically</li>
+<li>Using GitHub Actions and Docker to build the Web API and publish container images to Google Cloud Platform (GCP)</li>
+<li>The upcoming FunQL Playground UI — a visual frontend for exploring queries</li>
+</ul>
+<p>Stay tuned — and in the meantime, give the Playground API a spin!</p>
+<p><a class="md-button md-button--primary" href="https://www.postman.com/funqlio/funql/collection/hb88ymo/funql-playground-api">Use the Postman Collection</a>
+<a class="md-button" href="https://oas.play.funql.io/">Explore the API docs</a></p>
 
 
 
@@ -1415,7 +1354,7 @@ just a few lines of C# code. You can also check out the <a href="https://github.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 16, 2025 16:53:13 UTC">April 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2025 11:44:47 UTC">June 5, 2025</span>
   </span>
 
     
@@ -1425,7 +1364,7 @@ just a few lines of C# code. You can also check out the <a href="https://github.
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 16, 2025 16:53:13 UTC">April 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2025 11:44:47 UTC">June 5, 2025</span>
   </span>
 
     
@@ -1491,7 +1430,7 @@ just a few lines of C# code. You can also check out the <a href="https://github.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../02/introducing-the-first-funql-dotnet-sample/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introducing the first FunQL .NET sample">
+          <a href="../../../04/16/hands-on-with-funql-dotnet-basic-sample/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hands-on with FunQL .NET Basic sample">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1501,27 +1440,11 @@ just a few lines of C# code. You can also check out the <a href="https://github.
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introducing the first FunQL .NET sample
+                Hands-on with FunQL .NET Basic sample
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../../06/05/funql-playground-api-a-public-rest-api-for-learning-funql/" class="md-footer__link md-footer__link--next" aria-label="Next: FunQL Playground API: A public REST API for learning FunQL">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                FunQL Playground API: A public REST API for learning FunQL
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
