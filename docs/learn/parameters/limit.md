@@ -2,7 +2,7 @@
 
 The `limit` parameter restricts the maximum number of items returned in a single response.
 
-It is commonly used to retrieve a subset of results, such as the first item in a list.
+It is commonly used to retrieve a subset of results, such as the first few items from a list.
 
 === "REST"
 
@@ -61,3 +61,10 @@ consistent results, combine `limit` with a `sort` clause.
     ```
 
     </div>
+
+## Pagination
+
+To paginate results, combine `limit` with the [`skip`](skip.md) parameter. For example, to fetch the second page of a
+paginated list (items 11–20), use `skip(10)` and `limit(10)`.
+
+See the [`skip`](skip.md#pagination) parameter for a full example.
