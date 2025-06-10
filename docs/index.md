@@ -36,7 +36,9 @@ from simple search to complex queries. Looking for LEGO **Star Wars** sets that 
     HTTP/1.1 200 OK
     Content-Type: application/json
     
-    --8<-- "snippets/sets.json"
+    [
+      --8<-- "snippets/sets.json"
+    ]
     ```
 
     [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=and(eq(theme,%22STAR_WARS%22),gte(price,500),gt(year(launchTime),2010))&sort=desc(price) "Try this example in our Playground")
@@ -68,8 +70,12 @@ from simple search to complex queries. Looking for LEGO **Star Wars** sets that 
     ```json
     HTTP/1.1 200 OK
     Content-Type: application/json
-    
-    --8<-- "snippets/sets.json"
+
+    {
+      "data": [
+        --8<-- "snippets/sets.json"
+      ]
+    }
     ```
 
     </div>

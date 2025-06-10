@@ -58,10 +58,12 @@ consistent results, combine `limit` with a `sort` clause.
     ```json
     HTTP/1.1 200 OK
     Content-Type: application/json
-    
-    [
-      --8<-- "learn/snippets/set-millennium-falcon.json"
-    ]
+
+    {
+      "data": [
+        --8<-- "learn/snippets/set-millennium-falcon.json"
+      ]
+    }
     ```
 
     </div>

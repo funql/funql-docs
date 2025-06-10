@@ -1,14 +1,12 @@
-﻿[
-  {
-    "name": "LEGO Star Wars Millennium Falcon",
-    "setNumber": 75192,
-    "price": 849.99,
-    "launchTime": "2017-10-01T14:15:30.500Z"
-  },
-  {
-    "name": "LEGO Star Wars R2-D2",
-    "setNumber": 10225,
-    "price": 179.99,
-    "launchTime": "2012-05-01T14:15:30.500Z"
-  }
-]
+﻿{
+  "name": "LEGO Star Wars Millennium Falcon",
+  "setNumber": 75192,
+  "price": 849.99,
+  "launchTime": "2017-10-01T14:15:30.500Z"
+},
+{
+  "name": "LEGO Star Wars R2-D2",
+  "setNumber": 10225,
+  "price": 179.99,
+  "launchTime": "2012-05-01T14:15:30.500Z"
+}

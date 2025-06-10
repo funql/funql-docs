@@ -58,10 +58,12 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
     ```json
     HTTP/1.1 200 OK
     Content-Type: application/json
-    
-    [
-      --8<-- "learn/snippets/set-r2d2.json"
-    ]
+
+    {
+      "data": [
+        --8<-- "learn/snippets/set-r2d2.json"
+      ]
+    }
     ```
 
     </div>
@@ -109,10 +111,12 @@ with `limit(10)` to get the second page of results in a paginated list (items 11
     ```json
     HTTP/1.1 200 OK
     Content-Type: application/json
-    
-    [
-      --8<-- "learn/snippets/set-millennium-falcon.json"
-    ]
+
+    {
+      "data": [
+        --8<-- "learn/snippets/set-millennium-falcon.json"
+      ]
+    }
     ```
 
     </div>

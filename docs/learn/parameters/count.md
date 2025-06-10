@@ -43,7 +43,9 @@ To retrieve subsets of results along with the total count, see [pagination](skip
     Content-Type: application/json
     Total-Count: 70
 
-    --8<-- "learn/snippets/sets.json"
+    [
+      --8<-- "learn/snippets/sets.json"
+    ]
     ```
 
     !!! note
@@ -73,7 +75,7 @@ To retrieve subsets of results along with the total count, see [pagination](skip
     
     {
       "data": [
-        --8<-- "learn/snippets/set-millennium-falcon.json"
+        --8<-- "learn/snippets/sets.json"
       ],
       "metadata": {
         "totalCount": 70
