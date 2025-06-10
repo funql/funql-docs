@@ -33,7 +33,9 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
     HTTP/1.1 200 OK
     Content-Type: application/json
     
-    --8<-- "learn/snippets/set-r2d2.json"
+    [
+      --8<-- "learn/snippets/set-r2d2.json"
+    ]
     ```
 
     [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?skip=1 "Try this example in our Playground")
@@ -57,7 +59,9 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
     HTTP/1.1 200 OK
     Content-Type: application/json
     
-    --8<-- "learn/snippets/set-r2d2.json"
+    [
+      --8<-- "learn/snippets/set-r2d2.json"
+    ]
     ```
 
     </div>
@@ -79,7 +83,9 @@ with `limit(10)` to get the second page of results in a paginated list (items 11
     HTTP/1.1 200 OK
     Content-Type: application/json
     
-    --8<-- "learn/snippets/set-millennium-falcon.json"
+    [
+      --8<-- "learn/snippets/set-millennium-falcon.json"
+    ]
     ```
 
     [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?skip=10&limit=10 "Try this example in our Playground")
@@ -104,7 +110,9 @@ with `limit(10)` to get the second page of results in a paginated list (items 11
     HTTP/1.1 200 OK
     Content-Type: application/json
     
-    --8<-- "learn/snippets/set-millennium-falcon.json"
+    [
+      --8<-- "learn/snippets/set-millennium-falcon.json"
+    ]
     ```
 
     </div>

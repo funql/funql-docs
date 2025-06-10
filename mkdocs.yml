@@ -116,6 +116,7 @@ nav:
     - Parameters:
         - Skip: learn/parameters/skip.md
         - Limit: learn/parameters/limit.md
+        - Count: learn/parameters/count.md
   - Play:
     - play/index.md
   - Code:
