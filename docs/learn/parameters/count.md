@@ -2,7 +2,7 @@
 
 The count parameter includes the total number of items matching the current query.
 
-It is commonly used in combination with [pagination](skip.md#pagination) to display the total number of available
+It is commonly used in combination with [pagination](./skip.md#pagination) to display the total number of available
 results.
 
 !!! note
@@ -26,9 +26,9 @@ results.
 In this example, the response includes a total count of the number of matching results.
 
 This count reflects the total number of items matching the current query. It does not necessarily equal the number of
-items returned in the response, especially when using parameters such as [`limit`](limit.md) or `filter`.
+items returned in the response, especially when using parameters such as [`limit`](./limit.md) or `filter`.
 
-To retrieve subsets of results along with the total count, see [pagination](skip.md#pagination).
+To retrieve subsets of results along with the total count, see [pagination](./skip.md#pagination).
 
 === "REST"
 

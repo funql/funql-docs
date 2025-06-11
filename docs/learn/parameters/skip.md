@@ -2,7 +2,7 @@
 
 The `skip` parameter specifies how many items to omit from the beginning of the result set before returning data.
 
-It is commonly used for [pagination](#pagination) in combination with the [`limit`](limit.md) parameter.
+It is commonly used for [pagination](#pagination) in combination with the [`limit`](./limit.md) parameter.
 
 === "REST"
 
@@ -70,8 +70,8 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
 
 ## Pagination
 
-To retrieve additional pages of data, combine `skip` with the [`limit`](limit.md) parameter. For example, use `skip(10)`
-with `limit(10)` to get the second page of results in a paginated list (items 11-20).
+To retrieve additional pages of data, combine `skip` with the [`limit`](./limit.md) parameter. For example, use
+`skip(10)` with `limit(10)` to get the second page of results in a paginated list (items 11-20).
 
 === "REST"
 
