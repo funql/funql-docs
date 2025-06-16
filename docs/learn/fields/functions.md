@@ -61,7 +61,7 @@ Return all sets that were launched in 2017:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(year(launchTime),2017) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(year(launchTime),%202017)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -115,7 +115,7 @@ Return all sets that were launched in October, the 10th month of the year:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(month(launchTime),10) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(month(launchTime),%2010)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -168,7 +168,7 @@ Return all sets that were launched on the 1st day of a month:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(day(launchTime),1) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(day(launchTime),%201)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -222,7 +222,7 @@ Return all sets that were launched in the 14th hour of a day:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(hour(launchTime),14) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(hour(launchTime),%2014)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -275,7 +275,7 @@ Return all sets that were launched in the 15th minute of any hour on any day:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(minute(launchTime),15) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(minute(launchTime),%2015)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -328,7 +328,7 @@ Return all sets that were launched in the 30th second of any minute of any hour 
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(second(launchTime),30) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(second(launchTime),%2030)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -382,7 +382,7 @@ Return all sets that were launched in the 500th millisecond of any second of any
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(millisecond(launchTime),500) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(millisecond(launchTime),%20500)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -452,7 +452,7 @@ Return all sets that have a price that rounds to 850:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(round(price),850) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(round(price),%20850)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -506,7 +506,7 @@ Return all sets that have a price that rounds down to 849:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(floor(price),849) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(floor(price),%20849)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -560,7 +560,7 @@ Return all sets that have a price that rounds up to 850:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(ceiling(price),850) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(ceiling(price),%20850)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -628,7 +628,7 @@ converted to lowercase:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(lower(name),%22lego%20star%20wars%20millennium%20falcon%22) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(lower(name),%20%22lego%20star%20wars%20millennium%20falcon%22)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
@@ -683,7 +683,7 @@ converted to uppercase:
 
     <div class="result" markdown>
     
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?filter=eq(upper(name),%22LEGO%20STAR%20WARS%20MILLENNIUM%20FALCON%22) "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=eq(upper(name),%20%22LEGO%20STAR%20WARS%20MILLENNIUM%20FALCON%22)&sort=&skip=&limit=&count= "Try this example in our Playground")
     
     </div>
 
