@@ -38,7 +38,7 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
     ]
     ```
 
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?skip=1 "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=&sort=&skip=1&limit=&count= "Try this example in our Playground")
 
     </div>
 
@@ -90,7 +90,7 @@ To retrieve additional pages of data, combine `skip` with the [`limit`](./limit.
     ]
     ```
 
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?skip=10&limit=10 "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=&sort=&skip=10&limit=10&count= "Try this example in our Playground")
 
     </div>
 
