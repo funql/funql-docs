@@ -24,6 +24,9 @@ class FunQLLexer(RegexLexer):
     mimetypes = ['text/funql']
 
     tokens = {
+        'comments': [
+            (r'//.*?$', Comment.Single)
+        ],
         'function': [
             # Function start is defined with 'function('
             (r'([a-zA-Z][a-zA-Z0-9]*)(\()', bygroups(Name.Function, Punctuation), 'functionBody'),
@@ -31,6 +34,7 @@ class FunQLLexer(RegexLexer):
             (r'(\))(?=:)', Punctuation, 'type'),
         ],
         'functionBody': [
+            include('comments'),
             # Function may have nested functions
             include('function'),
             # Special JSON keywords should come before fields
@@ -58,6 +62,7 @@ class FunQLLexer(RegexLexer):
             (r'(\|)(\s*)([A-Z][a-zA-Z0-9]*)', bygroups(Punctuation, Whitespace, Keyword.Type))
         ],
         'root': [
+            include('comments'),
             include('function'),
             (r'\s', Whitespace)
         ],
