@@ -38,7 +38,7 @@ consistent results, combine `limit` with a `sort` clause.
     ]
     ```
 
-    [:material-flask-outline: Try](https://api.play.funql.io/v1beta1/sets?limit=1 "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=&sort=&skip=&limit=1&count= "Try this example in our Playground")
 
     </div>
 
