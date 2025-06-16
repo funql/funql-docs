@@ -1395,7 +1395,7 @@ the WebApi.http file included with the sample project.</p>
 <li>The launchTime is later than 2010.</li>
 </ul>
 <p>The results are sorted by price in descending order.</p>
-<div class="language-funql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">GET</span><span class="w"> </span><span class="err">https://localhost:5107/sets?filter=</span>
+<div class="language-funql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">GET</span><span class="w"> </span><span class="err">https:</span><span class="c1">//localhost:5107/sets?filter=</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nf">and</span><span class="p">(</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nf">has</span><span class="p">(</span><span class="nf">upper</span><span class="p">(</span><span class="nv">name</span><span class="p">),</span><span class="w"> </span><span class="s2">&quot;STAR WARS&quot;</span><span class="p">),</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nf">gte</span><span class="p">(</span><span class="nv">price</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">),</span>
