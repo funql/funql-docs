@@ -52,7 +52,7 @@ To retrieve subsets of results along with the total count, see [pagination](./sk
 
         In REST responses, the total count is included in the `Total-Count` header.
 
-    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=&sort=&skip=&limit=&count=true "Try this example in our Playground")
+    [:material-flask-outline: Try](https://play.funql.io/?request=listSets&filter=&sort=&skip=&limit=&count=true "Try this example in our Playground"){: target="_blank" }
 
     </div>
 
