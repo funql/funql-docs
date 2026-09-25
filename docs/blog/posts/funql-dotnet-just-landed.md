@@ -1,5 +1,8 @@
 ﻿---
 title: 'FunQL .NET just landed'
+description: >
+  Discover FunQL .NET, the official open-source .NET implementation of FunQL for powerful filtering, sorting, and
+  querying in REST APIs.
 date: 2025-03-21
 authors:
   - mathijsvanbremen

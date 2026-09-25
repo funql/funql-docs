@@ -1,6 +1,6 @@
 ﻿---
 title: 'FunQL Playground API: A public REST API for learning FunQL'
-description: |
+description: >
   Explore the hosted FunQL Playground API: a public REST API with sample data and OpenAPI docs to learn FunQL filtering,
   sorting, and pagination.
 date: 2025-06-05

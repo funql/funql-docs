@@ -1,13 +1,22 @@
-﻿# FunQL playground
+﻿---
+description: >
+  Experiment with FunQL in the interactive Playground. Build and run queries, explore query parameters, and see the
+  results instantly.
+---
 
-The FunQL Playground is an interactive environment where you can experiment with FunQL queries and see them in action.
-Whether you're new to FunQL or an experienced user, the Playground provides a hands-on way to explore how FunQL works
-without the need for setup or installation.
+# FunQL playground
+
+The FunQL Playground is an interactive environment for experimenting with FunQL queries directly in your browser. Build
+and run queries, explore different query parameters, and see the results instantly — no setup or installation required.
+
+[:material-flask-outline: Open Playground](https://play.funql.io/){: target="_blank" .md-button .md-button--primary }
 
 ## Get started with FunQL
 
-Start playing around, test different queries, and get a feel for the simplicity and power of FunQL — no coding required!
+The Playground provides a simple way to explore how FunQL works using a ready-to-use API and sample data.
 
-!!! info
-
-    The FunQL Playground is coming soon. We are actively working on it.
+1. Select a request from the sidebar.
+2. Add or modify FunQL query parameters.
+3. Send the request to see the result.
+4. Experiment with different queries to see how filtering, sorting, pagination, and other FunQL features affect the
+  response.

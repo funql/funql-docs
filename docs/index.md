@@ -1,6 +1,12 @@
-﻿![FunQL logo](assets/logo.png){ width="300" }
+﻿---
+description: >
+  Discover FunQL, the Functional Query Language for consistent filtering, sorting, pagination, and more across REST APIs
+  and beyond.
+---
 
-# Complex queries made simple
+# FunQL
+
+## Complex queries made simple
 
 FunQL, the Functional Query Language, is an open-source [specification](./learn/index.md) and
 [software implementation](./code/index.md) that standardizes API query design and provides ready-to-use software
@@ -41,7 +47,7 @@ from simple search to complex queries. Looking for LEGO **Star Wars** sets that 
     ]
     ```
 
-    [:material-flask-outline: Try](https://play.funql.io/?item=listSets&filter=and(%0A%20%20eq(theme,%20%22STAR_WARS%22),%0A%20%20gte(price,%20500),%0A%20%20gt(year(launchTime),%202010)%0A)&sort=desc(price)&skip=&limit=&count= "Try this example in our Playground"){: target="_blank" }
+    :material-flask-outline: [Try](https://play.funql.io/?item=listSets&filter=and(%0A%20%20eq(theme,%20%22STAR_WARS%22),%0A%20%20gte(price,%20500),%0A%20%20gt(year(launchTime),%202010)%0A)&sort=desc(price)&skip=&limit=&count= "Try this example in our Playground"){: target="_blank" }
 
     </div>
 

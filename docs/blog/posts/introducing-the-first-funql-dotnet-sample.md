@@ -1,6 +1,6 @@
 ﻿---
 title: 'Introducing the first FunQL .NET sample'
-description: |
+description: >
   Learn how to integrate FunQL into a .NET API with the new WebApi sample. A hands-on guide for filtering, sorting, and
   querying data in ASP.NET Core.
 date: 2025-04-02

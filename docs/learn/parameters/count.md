@@ -1,4 +1,13 @@
-﻿# Count parameter
+﻿---
+description: >
+  Learn how the FunQL count parameter returns the total number of items matching a query and how to use it with
+  filtering and pagination.
+icon: material/counter
+tags:
+  - Parameters
+---
+
+# Count parameter
 
 The count parameter includes the total number of items matching the current query.
 
@@ -52,7 +61,7 @@ To retrieve subsets of results along with the total count, see [pagination](./sk
 
         In REST responses, the total count is included in the `Total-Count` header.
 
-    [:material-flask-outline: Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=&limit=&count=true "Try this example in our Playground"){: target="_blank" }
+    :material-flask-outline: [Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=&limit=&count=true "Try this example in our Playground"){: target="_blank" }
 
     </div>
 

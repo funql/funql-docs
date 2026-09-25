@@ -1,3 +1,10 @@
+---
+description: >
+  Read the GNU General Public License version 2 (GPLv2), covering the terms and conditions for copying, modifying, and
+  distributing software.
+icon: material/file-certificate-outline
+---
+
 # GNU GPLv2
 
 ```

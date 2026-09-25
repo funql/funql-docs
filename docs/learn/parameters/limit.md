@@ -1,4 +1,13 @@
-﻿# Limit parameter
+﻿---
+description: >
+  Learn how the FunQL limit parameter restricts the number of items returned and how to use it with sorting and
+  pagination.
+icon: material/format-vertical-align-bottom
+tags:
+  - Parameters
+---
+
+# Limit parameter
 
 The `limit` parameter restricts the maximum number of items returned in a single response.
 
@@ -38,7 +47,7 @@ consistent results, combine `limit` with a `sort` clause.
     ]
     ```
 
-    [:material-flask-outline: Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=&limit=1&count= "Try this example in our Playground"){: target="_blank" }
+    :material-flask-outline: [Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=&limit=1&count= "Try this example in our Playground"){: target="_blank" }
 
     </div>
 

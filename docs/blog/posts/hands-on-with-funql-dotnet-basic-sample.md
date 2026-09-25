@@ -1,6 +1,6 @@
 ﻿---
 title: 'Hands-on with FunQL .NET Basic sample'
-description: |
+description: >
   Get started with FunQL .NET in C#. Use the Basic sample to run functional queries with filter and sort on in-memory
   data collections.
 date: 2025-04-16

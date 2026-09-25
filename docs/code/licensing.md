@@ -1,3 +1,10 @@
+---
+description: >
+  Compare FunQL licensing options, including GPLv2 and commercial licenses, to choose the right license for your open-
+  or closed-source project.
+icon: material/license
+---
+
 # Licensing
 
 FunQL software is available under two licensing options: the [GPLv2 license](./license-gplv2.md) and a Commercial

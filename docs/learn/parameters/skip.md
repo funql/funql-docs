@@ -1,4 +1,13 @@
-﻿# Skip parameter
+﻿---
+description: >
+  Learn how the FunQL skip parameter omits items from the beginning of results and how to use it with sorting and
+  pagination.
+icon: material/debug-step-over
+tags:
+  - Parameters
+---
+
+# Skip parameter
 
 The `skip` parameter specifies how many items to omit from the beginning of the result set before returning data.
 
@@ -38,7 +47,7 @@ order. To ensure consistent results, combine `skip` with a `sort` clause.
     ]
     ```
 
-    [:material-flask-outline: Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=1&limit=&count= "Try this example in our Playground"){: target="_blank" }
+    :material-flask-outline: [Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=1&limit=&count= "Try this example in our Playground"){: target="_blank" }
 
     </div>
 
@@ -90,7 +99,7 @@ To retrieve additional pages of data, combine `skip` with the [`limit`](./limit.
     ]
     ```
 
-    [:material-flask-outline: Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=10&limit=10&count= "Try this example in our Playground"){: target="_blank" }
+    :material-flask-outline: [Try](https://play.funql.io/?item=listSets&filter=&sort=&skip=10&limit=10&count= "Try this example in our Playground"){: target="_blank" }
 
     </div>
 
