@@ -1,0 +1,147 @@
+[project]
+site_name = "FunQL"
+site_description = "Functional Query Language"
+site_author = "Xtracked"
+site_url = "https://funql.io/"
+repo_url = "https://github.com/funql/funql-docs"
+edit_uri = "blob/main/docs/"
+copyright = """
+Copyright &copy; 2026 Xtracked |
+<a href="https://xtracked.com/privacybeleid/" target="_blank" rel="noopener">Privacy policy</a>
+"""
+nav = [
+    { "Home" = "index.md" },
+    { "Learn" = [
+        "learn/index.md",
+        { "Fields" = [
+            { "Functions" = "learn/fields/functions.md" },
+        ] },
+        { "Parameters" = [
+            { "Skip" = "learn/parameters/skip.md" },
+            { "Limit" = "learn/parameters/limit.md" },
+            { "Count" = "learn/parameters/count.md" },
+        ] },
+    ] },
+    { "Play" = [
+        "play/index.md",
+    ] },
+    { "Code" = [
+        "code/index.md",
+        { "Licensing" = "code/licensing.md" },
+        { "GPLv2" = "code/license-gplv2.md" },
+    ] },
+    { "Blog" = [
+        "blog/index.md",
+    ] },
+]
+extra_css = [
+    "stylesheets/extra.css",
+]
+
+# Theme options
+[project.theme]
+language = "en"
+features = [
+    "content.action.edit",
+    "content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.top",
+    "search.highlight",
+    "toc.follow",
+]
+font.text = "Inter"
+font.code = "JetBrains Mono"
+logo = "assets/funql-icon.svg"
+favicon = "assets/favicon.png"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+# Miscellaneous settings
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/funql"
+
+[project.extra.analytics]
+provider = "google"
+property = "!ENV GOOGLE_ANALYTICS_KEY"
+
+# Plugins
+[project.plugins.blog]
+
+# Markdown extensions
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+footnotes = {}
+md_in_html = {}
+toc = {
+    permalink = true,
+}
+pymdownx.details = {}
+pymdownx.emoji = {
+    emoji_generator = "zensical.extensions.emoji.to_svg",
+    emoji_index = "zensical.extensions.emoji.twemoji",
+}
+pymdownx.highlight = {
+    anchor_linenums = true,
+    line_spans = "__span",
+    pygments_lang_class = true,
+}
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {
+    base_path = "docs",
+}
+pymdownx.superfences = {
+    custom_fences = [
+        {
+            name = "mermaid",
+            class = "mermaid",
+            format = "pymdownx.superfences.fence_code_format",
+        },
+    ],
+}
+pymdownx.tabbed = {
+    alternate_style = true,
+    combine_header_slug = true,
+    slugify = {
+        object = "pymdownx.slugs.slugify",
+        kwds.case = "lower",
+    },
+}
+zensical.extensions.glightbox = {
+    auto_themed = true,
+}
