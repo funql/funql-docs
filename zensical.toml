@@ -102,6 +102,13 @@ property = "!ENV GOOGLE_ANALYTICS_KEY"
 # Plugins
 [project.plugins.blog]
 
+[project.plugins.minify]
+minify_html = true
+minify_js = true
+minify_css = true
+minify_inline_js = true
+minify_inline_css = true
+
 # Markdown extensions
 [project.markdown_extensions]
 admonition = {}
